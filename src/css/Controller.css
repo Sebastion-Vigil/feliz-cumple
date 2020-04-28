@@ -1,5 +1,65 @@
 .Controller {
-    width: 99%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     height: 28%;
     background-color: darkblue;
+    color: red;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    /* important discovery with width: auto */
+    width: auto; 
+    /* border: 1px solid purple; */
+}
+
+.d-pad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: darkslateblue;
+}
+
+.d-pad-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    /* border: .225px solid gold; */
+}
+
+.d-square {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(148, 128, 90);
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 15px;
+  background-color: darkgrey;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: lightcoral;
+  margin: 1px;
 }

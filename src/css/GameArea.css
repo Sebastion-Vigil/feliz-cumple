@@ -1,15 +1,19 @@
 .GameArea {
+  /* 
+  need to play around with min-width/height 
+  don't want user shrinking or distorting
+  */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
-  border: 2px solid green;
+  background-color: silver;
+  /* border: 2px solid green; */
 }
 
 @media (orientation: portrait) {
     .GameArea {
-      width: 90%;
+      width: 99%;
       height: 90%;
     }
 }
@@ -17,6 +21,6 @@
 @media (orientation: landscape) {
     .GameArea {
       width: 47.5%;
-      height: 95%;
+      height: 99%;
     }
 }
