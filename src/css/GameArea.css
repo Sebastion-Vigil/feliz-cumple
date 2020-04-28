@@ -1,0 +1,22 @@
+.GameArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  border: 2px solid green;
+}
+
+@media (orientation: portrait) {
+    .GameArea {
+      width: 90%;
+      height: 90%;
+    }
+}
+
+@media (orientation: landscape) {
+    .GameArea {
+      width: 47.5%;
+      height: 95%;
+    }
+}
