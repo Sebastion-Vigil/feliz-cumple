@@ -8,16 +8,16 @@ class Controller extends React.Component {
             <div className='Controller'>
               <div className='button-section'>
                   <div className='d-pad'>
-                      <div className='d-pad-section'>
-                          <div className='d-square up'></div>
+                      <div className='d-pad-section edge'>
+                          <div className='up'></div>
                       </div>
-                      <div className='d-pad-section'>
-                          <div className='d-square left'></div>
+                      <div className='d-pad-section middle'>
+                          <div className='left'></div>
                           <div className='d-square'></div>
-                          <div className='d-square right'></div>
+                          <div className='right'></div>
                       </div>
-                      <div className='d-pad-section'>
-                          <div className='d-square down'></div>
+                      <div className='d-pad-section edge'>
+                          <div className='down'></div>
                       </div>
                   </div>
               </div>
