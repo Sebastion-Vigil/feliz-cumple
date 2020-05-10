@@ -5,7 +5,7 @@ import '../css/Controller.css'
 class Controller extends React.Component {
   state = {
     timerIsabela: undefined,
-    startButton: 'start' // pass to markup later
+    startButton: 'start'
   }
 
   DPadHandler = d => {
@@ -20,27 +20,27 @@ class Controller extends React.Component {
         let l = parseInt(newPos.left)
 
         if (d === 'u') {
-          //   if (t <= 0) return
+            if (t <= 1) return
           t -= 1
         } else if (d === 'l') {
-          // if (l <= 0) return
+          if (l <= 1) return
           l -= 1
         } else if (d === 'r') {
-          // if (l >= 100) return
+          if (l >= 250) return
           l += 1
         } else if (d === 'd') {
-          // if (t >= 100) return
+          if (t >= 250) return
           t += 1
         }
-        newPos.top = t + 'px'
-        newPos.left = l + 'px'
+        newPos.top = `${t}px`
+        newPos.left = `${l}px`
         this.props.update(newPos)
       })
     })
   }
 
-  stopTimer = which => {
-    clearInterval(this.state[which])
+  stopTimer = which => { // snooty peeps be trippin' on my code
+    clearInterval(this.state[which]) // i does what i does, heard?
   }
 
   render () {
@@ -78,11 +78,11 @@ class Controller extends React.Component {
           </div>
         </div>
         <div className='button-section'>
-          <div className='start'>Start</div>
+          <div className='start'>{this.state.startButton}</div>
         </div>
         <div className='button-section'>
-          <div className='action'>B</div>
-          <div className='action'>A</div>
+          <div className='action'>b</div>
+          <div className='action'>a</div>
         </div>
       </div>
     )

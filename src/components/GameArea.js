@@ -11,11 +11,11 @@ class GameArea extends React.Component {
     // ...note to self...LEARN Redux!
     state={
         IsaPosition: {
-            top: '1px',
-            left: '1px'
+            top: '250px',
+            left: '125px'
         }
     }
-
+    
     updateIsaPosition = (update) => {
       this.setState({
           IsaPosition: update

@@ -10,7 +10,7 @@
   background-color: lightcoral;
   /* border: 2px solid green; */
 }
-
+/* methinks this shouldn't be % */
 @media (orientation: portrait) {
     .GameArea {
       width: 99%;
