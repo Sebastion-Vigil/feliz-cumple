@@ -8,6 +8,7 @@ class Game extends React.Component {
     render() {
         return (
             <div className='Game'>
+                Hello world!<br/>
                 <Isabela
                   top={this.props.top}
                   left={this.props.left}

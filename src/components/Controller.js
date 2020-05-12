@@ -40,6 +40,7 @@ class Controller extends React.Component {
   }
 
   stopTimer = which => { // snooty peeps be trippin' on my code
+    console.log('peek-a-boo!')
     clearInterval(this.state[which]) // i does what i does, heard?
   }
 
