@@ -29,7 +29,7 @@ class Controller extends React.Component {
           if (l >= 250) return
           l += 1
         } else if (d === 'd') {
-          if (t >= 250) return
+          if (t >= 450) return
           t += 1
         }
         newPos.top = `${t}px`

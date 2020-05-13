@@ -1,11 +1,12 @@
 .GameScreen {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 300px;
     height: 300px;
-    border: 2px solid black;
-    overflow: scroll;
+    border: 1px solid black;
+    
 }
 /* GameArea.css now needs a similar query */
 /* @media (min-width: 800px) {
