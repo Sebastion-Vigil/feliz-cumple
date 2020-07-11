@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   /* border: 2px solid green; */
 }
 /* methinks this shouldn't be % */
